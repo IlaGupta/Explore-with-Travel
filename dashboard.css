@@ -1,0 +1,185 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+/*fonts*/
+
+h4,hr,h2,h3 {
+  color: #0f0f0f;
+}
+
+body{
+  font-size:18px;
+  color:rgba(0,0,0,.6);
+}
+
+.btn{
+  font-size:18px;
+}
+
+
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-top:20px ;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ee121b;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+  background-color: rgba(185, 46, 52, .6);
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    /*background-color: #f5f5f5;*/
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #ffffff;
+  background-color: #cabea1;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+/*
+Popovers
+*/
+
+#toDos {
+  margin-top: 3%;
+}
+div.leh {
+  padding-top: 1%;
+}
+a.leh , a.goa , a.j_k
+{
+  float:right;
+}
+
+.popover.fade {
+  background-color: #d2d2d2;
+  color: #000000;
+}
+
+@media (max-width: 475px) {
+a.btn.btn-lg.btn-default{
+ display:block;
+
+
+}
+
+}
+
+
+
+/*Page-3 Pictures*/
+
+.page-3 {
+  margin:4% auto;
+
+}
+
+.adventure_pictures {
+  border: 1.5px solid #e1e1e1;
+  text-align:center;
+  padding: 15px;
+  background-color: rgba(255,255,255, .8);
+  margin-bottom:2%;
+  height: 40rem;
+}
+
+
+
+.adventure_pictures img {
+  height:250px;
+
+}
+
+/*page-4*/
+.submit_form {
+  clear: both;
+  padding-top: 6%;
+}
+
+
+/*Placeholder dashboard ideas*/
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+
